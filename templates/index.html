@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #111;
+  background-color: white;
   background-repeat: no-repeat;
 }
 
@@ -28,14 +28,15 @@ body {
   text-align: center;
   display: flex;
   color: white;
+  font-size: 25px;
   box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }
 
 .info {
   width: 45%;
-  background: rgba(20, 20, 20, .8);
+  background-color: #B51A3A;
   padding: 30px 0;
-  border-right: 5px solid rgba(30, 30, 30, .8);
+  border-right: 5px solid #B51A3A;
 }
   .infoh2 {
     padding-top: 30px;
@@ -53,8 +54,8 @@ body {
 
 .MForm{
   width: 70%;
-  padding: 30px 0;
-  background: rgba(20, 40, 40, .8);
+  padding: 0px 0;
+  background-color:  #B51A3A;
   transition: .2s;
 }
 h2 {
@@ -65,12 +66,13 @@ h2 {
   font-size: 16px;
   padding: 10px;
   width: 250px;
-  border: 1px solid rgba(10, 180, 180, 1);
+  border: 1px solid #B51A3A;
   border-top: none;
+  border-radius: 5px;
   border-left: none;
   border-right: none;
-  background: rgba(20, 20, 20, .2);
-  color: white;
+  background: white;
+  color: black;
   outline: none;
 }
 
@@ -81,7 +83,9 @@ h2 {
 
 #join-btn {
   border: 1px solid rgba(10, 180, 180, 1);
-  background: rgba(20, 20, 20, .6);
+  background-color: rgb(10, 10, 87);
+  font-weight: bold;
+  border-radius: 10px;
   font-size: 18px;
   color: white;
   margin-top: 20px;
@@ -130,8 +134,8 @@ textarea {
           </div>
         </div>
         </div>
-        <form action="predict"class="MForm">
-          <h2>Personality Prediction</h2>
+        <form action="predict" class="MForm">
+          <h2><b>Personality Prediction</b></h2>
           <ul class="noBullet">
             <li>
               <label for="username"></label>
@@ -139,7 +143,7 @@ textarea {
             </li>
        
             <li id="center-btn">
-              <input type="submit" id="join-btn" name="join" alt="Join" value="Predict">
+              <input type="submit" id="join-btn" name="join" alt="Join" value="Find">
             </li>
           </ul>
         </form>
